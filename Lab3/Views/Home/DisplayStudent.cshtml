@@ -1,0 +1,27 @@
+﻿
+<article class="DisplayStudent-post">
+
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>studentid Name</th>
+            <th>Eamil</th>
+            <th>Password</th>
+            <th>Description</th>
+            <tr>
+                <th>@ViewBag.fname</th>
+                <th>@ViewBag.lname</th>
+                <th>@ViewBag.id</th>
+                <th>@ViewBag.email</th>
+                <th>@ViewBag.password</th>
+                <th>@ViewBag.desc</th>
+            </tr>
+
+        </tr>
+    </table>
+    <br />
+    <button>
+        @Html.ActionLink("Students", "CreateStudent", "Home")
+    </button>
+</article>
