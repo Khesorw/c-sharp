@@ -20,6 +20,8 @@ namespace Lab4.Models
         public decimal Fee { get; set; }
 
 
+        public List<Lab4.Models.Subscription> Subscriptions { get; set; }
+
 
 
 

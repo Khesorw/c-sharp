@@ -7,6 +7,7 @@ namespace Lab4.Models
 {
     public class Client
     {
+
         public int Id { get; set; }
 
 
@@ -27,8 +28,10 @@ namespace Lab4.Models
         [DataType(DataType.DateTime)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}",ApplyFormatInEditMode =true)]
         [Display(Name = "Birth Date")]
-        DateTime BirthDate { get; set; }
+       public DateTime BirthDate { get; set; }
 
+
+        public List<Lab4.Models.Subscription> Subscriptions { get; set; }
         public string FullName()
         {
             return string.Format("{0} , {1}",LastName,FirstName);
