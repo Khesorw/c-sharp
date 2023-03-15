@@ -31,7 +31,7 @@ namespace Lab4.Models
        public DateTime BirthDate { get; set; }
 
 
-        public List<Lab4.Models.Subscription> Subscriptions { get; set; }
+        public List<Subscription> Subscriptions { get; set; }
         public string FullName()
         {
             return string.Format("{0} , {1}",LastName,FirstName);

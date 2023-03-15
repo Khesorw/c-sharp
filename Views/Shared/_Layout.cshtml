@@ -11,7 +11,21 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <p>@Html.ActionLink("Home","Index","Home")</p>
+              <div class="mydiv">
+                <ul>
+                    <li>
+                        @Html.ActionLink("Home","Index","Home")
+
+                    </li>
+                    <li>
+                        @Html.ActionLink("Client","Index","Clients")
+                    </li>
+                    <li>
+                        @Html.ActionLink("News Board","Index","NewsBoards")
+                    </li>
+                </ul>
+              </div>
+              
             </div>
         </nav>
     </header>

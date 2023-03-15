@@ -8,5 +8,15 @@ namespace Lab4.Controllers
         {
             return View();
         }
+
+
+
+        public IActionResult Error() 
+        {
+
+            //.net will take care of finding the view
+            return View();
+            
+        }
     }
 }
