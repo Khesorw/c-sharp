@@ -1,0 +1,38 @@
+﻿@page
+@model Lab5.Pages.Predections.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Prediction</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <div class="custom-radio">
+                    <input type="radio" name="Question" value="Computer" checked>What will the computers look like in 20 years?<br />
+                    <input type="radio" name="Question" value="Earth">What will the earth look like in 20 years?<br />
+                </div>
+                <div class="btn btn-sm float-left">
+                    <input name="image" asp-for="image" type="file">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="upload" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
