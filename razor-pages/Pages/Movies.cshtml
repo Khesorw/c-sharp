@@ -1,0 +1,37 @@
+﻿@page
+@model RazorPractice.Pages.MoviesModel
+@{
+
+    Layout = "_Layout";
+}
+
+<table>
+<thead>
+<tr>
+<th scope="col">#</th>
+ <th scope="col">Title</th>
+ <th scope="col">Rate</th>
+ <th scope="col">Description</th>
+
+</tr>
+<t/head>
+
+
+<tbody>
+    
+@foreach(var index in Model.Movies)
+{
+    <tr>
+    <th scope="row">@index.Id</th>
+    <th>@index.Title</th>
+    <th>@index.Rate</th>
+    <th>@index.Description</th>
+    </tr>
+    
+    
+}
+
+
+
+</tbody>
+        </table>
