@@ -1,0 +1,44 @@
+﻿@addTagHelper "Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper , Microsoft.AspNetCore.Mvc.TagHelpers"
+@model WebApplication1.Models.Post
+@{
+    Layout = "_Layout";
+}
+
+
+<fieldset>
+   
+  
+   @using(Html.BeginForm()){
+   @Html.ValidationSummary();
+
+    <p>
+    
+
+
+    @Html.LabelFor(name=>name.Name)
+    @Html.EditorFor(x=>x.Name)
+    @Html.ValidationMessageFor(x=>x.Name)
+
+ 
+    </p>
+    <p>
+        @Html.LabelFor(lName=>lName.lname,"Last Name")
+        @Html.EditorFor(lName=>lName.lname)
+            @Html.ValidationMessageFor(x=>x.lname)
+
+
+    </p>
+
+        <p>
+            @Html.LabelFor(title=>title.title,"Title ")
+            @Html.EditorFor(title=>title.title)
+            @Html.ValidationMessageFor(x=>x.title)
+
+        </p>
+
+        <button type="submit" class="btn-success">Submit </button>
+
+   }
+ 
+
+</fieldset>

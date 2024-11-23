@@ -1,0 +1,17 @@
+﻿@model WebApplication1.Models.Post
+
+@{
+
+
+
+    Layout = "_Layout";
+}
+
+
+
+
+ @await Html.PartialAsync("_Post")
+    <div class="content">
+        <p>this is the body of mine</p>
+    </div>
+</article>

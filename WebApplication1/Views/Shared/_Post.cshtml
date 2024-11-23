@@ -1,0 +1,15 @@
+﻿@model WebApplication1.Models.Post
+<!-- in the partial view it is not needed to put the layout attribute inface it might cause an error therefore it is recommended to remove the 
+    layout attribute for the good measure and to avoid bugs.
+-->
+
+<article class="blog-post">
+    <h1>@Model.Name</h1>
+    <div class="detail">
+        Posted <span>@Model.title</span> by <span>@Model.lname</span>
+
+    </div>
+    <div class="content">
+        <p>this is the body of mine</p>
+    </div>
+</article>

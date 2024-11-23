@@ -1,0 +1,28 @@
+﻿@model WebApplication1.Models.Post
+@{
+
+    Layout = "_Layout";
+}
+
+<h1>Explore blogs here</h1>
+
+
+<p>
+    here is our explore blog
+   
+</p>
+
+<div class="bolg-post">
+   
+    <div>
+    <h1>
+    @Html.ActionLink("Title Link","post","blog",new {
+        name = Model.Name,lname = Model.lname,title = Model.title
+    } )
+
+    </h1>
+    </div>
+    <p>First Name: @Model.Name</p>
+    <p>Last Name: @Model.lname</p>
+    <p>Title: @Model.title</p>
+</div>
