@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - EntityFramework</title>
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+              <div class="mydiv">
+                <ul>
+                    <li>
+                        @Html.ActionLink("Home","Index","Home")
+
+                    </li>
+                    <li>
+                        @Html.ActionLink("Client","Index","Clients")
+                    </li>
+                    <li>
+                        @Html.ActionLink("News Board","Index","NewsBoards")
+                    </li>
+                </ul>
+              </div>
+              
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            <span>@DateTime.Now.Year</span> - Lab4 Hasib 🙂
+        </div>
+    </footer>
+
+   @await RenderSectionAsync("Scripts", required: false)
+
+   
+   
+</body>
+</html>
