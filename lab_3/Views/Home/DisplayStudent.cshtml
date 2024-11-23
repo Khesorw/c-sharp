@@ -1,0 +1,28 @@
+﻿@Model Lab3.Models.Student
+<article class="DisplayStudent-post">
+
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>studentid Name</th>
+            <th>Eamil</th>
+            <th>Password</th>
+            <th>Description</th>
+            <tr>
+            <th>@Model.FristName</th>
+            <th>@Model.LastName</th>
+            <th>@Model.StudentId</th>
+            <th>@Model.EmailAddress</th>
+             <th>@Model.Password</th>
+            <th>@Model.Description_Of_Student</th>
+            
+            </tr>
+            
+        </tr>
+    </table>
+    <br />
+    <button>
+        @Html.ActionLink("Students", "CreateStudent", "Home")
+    </button>
+</article>

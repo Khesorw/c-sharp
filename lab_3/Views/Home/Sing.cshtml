@@ -1,0 +1,45 @@
+﻿
+<article class="sing-post">
+
+  
+
+    @{
+        var counter = int.Parse(ViewBag.number);
+
+        while(counter > 0)
+        {
+
+            if(counter <= 1)
+            {
+                <p>@counter green bottle hanging on the wall</p>
+                <p>@counter green bottle hanging on the wall</p>
+            }
+            <p>@counter green bottles hanging on the wall</p>
+            <p>@counter green bottles hanging on the wall</p>
+            <p>and if one green bottle should accidentally fall</p>
+
+            counter -= 1;
+            if(counter <= 1)
+            {
+                <p>There'll be @counter green bottle hanging on the wall</p>
+
+                <br />
+
+            }
+            <p>There'll be @counter green bottles hanging on the wall</p><br />
+
+
+
+            <br />
+            
+        }
+        <button>
+            @Html.ActionLink("Show the song", "SongForm", "Home")
+        </button>
+    }
+
+
+
+
+
+</article>

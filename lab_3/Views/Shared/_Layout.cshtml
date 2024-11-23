@@ -1,0 +1,45 @@
+﻿<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Lab 3 Khesrow</title>
+    <meta name="keywords" content="html5, css3, lynda, local storage, canvas, forms, semantics, web apps">
+    <link href="/css/site.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<header>
+    <h2> Hasib Yosufi</h2><br /><br />
+    <h3>Welcom to my page</h3>
+
+    <button>
+        @Html.ActionLink("Home", "Index", "Home")
+       
+    </button>
+    <button>
+        @Html.ActionLink("Create Student","CreateStudent","Home")
+    </button>
+    <button>
+        @Html.ActionLink("Song form","SongForm","Home")
+    </button>
+</header>
+<body>
+
+
+
+    <div class="content">
+     @RenderBody()  
+    </div>
+</body>
+
+
+<footer>
+    <h3>
+        Programmed By Hasib Yosufi
+    </h3><br /><br />
+    <h3>
+        @DateTime.Now.DayOfWeek
+
+    </h3>
+</footer>
+</html>

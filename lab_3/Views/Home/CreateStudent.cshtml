@@ -1,0 +1,30 @@
+﻿
+@model Lab3.Models.Student
+<form asp-controller="home" asp-action="DisplayStudent" method="post">
+
+    <div>
+        <label>First Name: </label>
+        <input asp-for="FristName" name="FristName" />
+        <span asp-validation-for="FristName"  class="text-danger"></span>
+         
+        <br />
+        <label>Last Name: </label>
+        <input asp-for="LastName" id="lastName" name="lastName" />
+       
+        <label>Email Address: </label>
+        <input asp-for="EmailAddress" type="text" id="email_Address" name="EmailAddress" />
+        <br />
+        <label>Student ID: </label>
+        <input id="studentId" name="studentId" />
+        <br />
+        <label>Password: </label>
+        <input type="password" id="password" name="password" />
+        <br />
+        <label>Description: </label>
+        <input type="text" id="description_of_student" name="description_of_student" />
+        <br />
+        <button type="submit">Submit</button>
+    </div>
+
+
+</form>
